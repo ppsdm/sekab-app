@@ -1,0 +1,35 @@
+/www/html/photos
+/www/html/reports
+/webcache/Cookies/
+/webcache/
+debug.log
+debug.log.orig
+webcache/*
+webcache/GPUCache/data_0
+webcache/GPUCache/index
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
