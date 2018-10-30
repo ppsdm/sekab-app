@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Nirwan Adi Praesta">
     <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
-    <title>Kementerian Kesehatan Republik Indonesia</title>
+    <title>Sekretariat Kabinet Republik Indonesia</title>
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Menu CSS -->
@@ -64,7 +64,7 @@ th.rotate {
 }
 
 th.rotate > div {
-  transform: 
+  transform:
     /* Magic Numbers */
     translate(0px, 80px)
     /* 45 is really 360 - 45 */
@@ -117,14 +117,14 @@ th.rotate > div > span {
 						<li><a href="dashboard.php?eselon=3" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 3</a></li>
 						<li><a href="dashboard.php?eselon=4" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 4</a></li>
 						</ul>
-						
+
                     </li>
                     <li>
                         <a href="blank.php" class="waves-effect"><i class="fa fa-info fa-fw" aria-hidden="true"></i>Pengantar</a>
-                    </li>					
+                    </li>
                     <li>
                         <a href="basic-table.php" class="waves-effect"><i class="fa fa-users fa-fw" aria-hidden="true"></i>Daftar Assessee</a>
-                    </li>					
+                    </li>
 
                     <li>
                         <a href="rekapitulasi.php" class="waves-effect"><i class="fa fa-book fa-fw" aria-hidden="true"></i>Rekapitulasi</a>
@@ -133,7 +133,7 @@ th.rotate > div > span {
                 </ul>
 
             </div>
-            
+
         </div>
         <!-- ============================================================== -->
         <!-- End Left Sidebar -->
@@ -157,13 +157,13 @@ th.rotate > div > span {
                         <div class="white-box">
 <div class="container">
     <div class="row">
-       
+
 
             <table border="1px" style="text-align:center;font-size:10px;">
                 <thead>
                     <tr>
 					<th style="text-align:center" ><div><span>NO.</span></div></th>
-                        <th style="text-align:center" >NAMA PEGAWAI</th>					
+                        <th style="text-align:center" >NAMA PEGAWAI</th>
 						<th style="text-align:center" ><div><span>NIP</span></div></th>
 						<th style="text-align:center" ><div><span>JABATAN</span></div></th>
 						<th style="text-align:center" ><div><span>% POTENSI</span></div></th>
@@ -171,8 +171,8 @@ th.rotate > div > span {
 						<th style="text-align:center" ><div><span>% KOMPETENSI</span></div></th>
 						<th style="text-align:center" ><div><span>REK KOMPETENSI</span></div></th>
 						<th style="text-align:center" ><div><span>9-CELL</span></div></th>
-		
-					</tr>				
+
+					</tr>
                 </thead>
                 <tbody>
 <?
@@ -196,11 +196,11 @@ th.rotate > div > span {
    $ret = $db->query($sql);
    while($row = $ret->fetchArray(SQLITE3_ASSOC) ){
 ?>
-								
-									
+
+
                                         <tr style="text-align:center;font-size:10px;">
                                             <td ><?=$row['NOMOR'];?></td>
-                                            <td style="text-align:left;font-size:10px;padding-left:5px;"><b><?=$row['NAMALENGKAP'];?></b></td>                                            
+                                            <td style="text-align:left;font-size:10px;padding-left:5px;"><b><?=$row['NAMALENGKAP'];?></b></td>
                                             <td ><?=$row['NIP'];?></td>
                                             <td ><?=$row['JABATAN'];?></td>
                                             <td ><?=$row['PROSENTASEPOTENSI'];?></td>
@@ -209,13 +209,13 @@ th.rotate > div > span {
                                             <td ><?=$row['REK-KOMPETENSI'];?></td>
                                             <td ><?=$row['POSISI9CELL'];?></td>
                                         </tr>
-<?										
+<?
    }
    $db->close();
-?>	
+?>
                 </tbody>
             </table>
-        
+
     </div>
 </div>
                     </div>

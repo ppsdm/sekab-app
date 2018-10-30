@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Nirwan Adi Praesta">
     <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
-    <title>Kementerian Kesehatan Republik Indonesia</title>
+    <title>Sekretariat Kabinet Republik Indonesia</title>
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Menu CSS -->
@@ -71,14 +71,14 @@
 						<li><a href="dashboard.php?eselon=3" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 3</a></li>
 						<li><a href="dashboard.php?eselon=4" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 4</a></li>
 						</ul>
-						
+
                     </li>
                     <li>
                         <a href="blank.php" class="waves-effect"><i class="fa fa-info fa-fw" aria-hidden="true"></i>Pengantar</a>
-                    </li>					
+                    </li>
                     <li>
                         <a href="basic-table.php" class="waves-effect"><i class="fa fa-users fa-fw" aria-hidden="true"></i>Daftar Assessee</a>
-                    </li>					
+                    </li>
 
                     <li>
                         <a href="rekapitulasi.php" class="waves-effect"><i class="fa fa-book fa-fw" aria-hidden="true"></i>Rekapitulasi</a>
@@ -87,7 +87,7 @@
                 </ul>
 
             </div>
-            
+
         </div>
         <!-- ============================================================== -->
         <!-- End Left Sidebar -->
@@ -106,8 +106,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="white-box">
-                            <h3 class="box-title"></h3> 
-							
+                            <h3 class="box-title"></h3>
+
 <h3>Laporan Ahir kegiatan hasil Profile Assessment Competency ini terdiri dari 3 bagian, sebagai berikut :</h3>
 <ol>
 <li>Berisi penjelasan dan keterangan tentang model dan jenis kompetensi yang dipakai termasuk di dalamnya  definisi / batasan kompetensi, perbedaan jumlah / jenis kompetensi dan level kompetensi pada setiap kelompok jabatan dan  golongan pegawai serta klasifikasi / rekomendasi hasil pengukuran / asesmen kompetensi dan Potensi. Disamping itu juga di sampaikan jadwal dan sekuen  kerja yang telah dilaksanakan .</li>
@@ -123,11 +123,11 @@
 </ol>
 <br/>
 <br/>
-Laporan ini pada dasarnya bersifat RAHASIA / CONFIDENTIAL, karena itu diharapkan penggunaan dan penyimpanannya  disesuaikan dengan sifatnya tersebut. Hal hal yang melanggar ketentuan kerahasiaan Laporan / tulisan ini dapat  sangat merugikan individu atau subjek yang berkaitan yang pada ahirnya juga akan mempengaruhi organisasi / unit kerjanya. Semoga dapat dipahami dan memberikan kontribusi optimal dalam proses pembinaan dan pengembangan pejabat di lingkungan KEMENKES    
+Laporan ini pada dasarnya bersifat RAHASIA / CONFIDENTIAL, karena itu diharapkan penggunaan dan penyimpanannya  disesuaikan dengan sifatnya tersebut. Hal hal yang melanggar ketentuan kerahasiaan Laporan / tulisan ini dapat  sangat merugikan individu atau subjek yang berkaitan yang pada ahirnya juga akan mempengaruhi organisasi / unit kerjanya. Semoga dapat dipahami dan memberikan kontribusi optimal dalam proses pembinaan dan pengembangan pejabat di lingkungan KEMENKES
 <br/><br/><br/>
 
 Jakarta,  5  Desember  2017
-							
+
 							</div>
                     </div>
                 </div>

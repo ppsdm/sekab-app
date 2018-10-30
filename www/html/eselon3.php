@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Nirwan Adi Praesta">
     <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
-    <title>Kementerian Kesehatan Republik Indonesia</title>
+    <title>Sekretariat Kabinet Republik Indonesia</title>
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Menu CSS -->
@@ -96,14 +96,14 @@
 						<li><a href="dashboard.php?eselon=3" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 3</a></li>
 						<li><a href="dashboard.php?eselon=4" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 4</a></li>
 						</ul>
-						
+
                     </li>
                     <li>
                         <a href="blank.php" class="waves-effect"><i class="fa fa-info fa-fw" aria-hidden="true"></i>Pengantar</a>
-                    </li>					
+                    </li>
                     <li>
                         <a href="basic-table.php" class="waves-effect"><i class="fa fa-users fa-fw" aria-hidden="true"></i>Daftar Assessee</a>
-                    </li>					
+                    </li>
 
                     <li>
                         <a href="rekapitulasi.php" class="waves-effect"><i class="fa fa-book fa-fw" aria-hidden="true"></i>Rekapitulasi</a>
@@ -112,7 +112,7 @@
                 </ul>
 
             </div>
-            
+
         </div>
         <!-- ============================================================== -->
         <!-- End Left Sidebar -->
@@ -129,8 +129,8 @@
 						<a class="btn btn btn-rounded btn-default btn-outline m-r-5" href="eselon2.php"><i class="fa fa-circle m-r-5 text-inverse"></i>ESELON 2</a>
 						<a class="btn btn btn-rounded btn-default btn-outline m-r-5" href="eselon3.php"><i class="fa fa-circle m-r-5 text-info"></i>ESELON 3</a>
 						<a class="btn btn btn-rounded btn-default btn-outline m-r-5" href="eselon4.php"><i class="fa fa-circle m-r-5 text-inverse"></i>ESELON 4</a>
-						</h4> 
-						
+						</h4>
+
 						</div>
 
                     <!-- /.col-lg-12 -->
@@ -178,8 +178,8 @@ left join mappingKemenkes b on a.profile_id = b.profile_id where a.level = "ADMI
    $ret = $db->query($sql);
    while($row = $ret->fetchArray(SQLITE3_ASSOC) ){
 ?>
-								
-									
+
+
                                         <tr>
                                             <td><?=$row['nip'];?></td>
                                             <td ><?=$row['first_name'];?></td>
@@ -188,10 +188,10 @@ left join mappingKemenkes b on a.profile_id = b.profile_id where a.level = "ADMI
 											<a class="btn btn btn-rounded btn-default btn-outline m-r-5" href="profile.php?profile_id=<?=$row['profile_id'];?>&project_activity_id=<?=$row['project_Activity_id'];?>">
 											<i class="ti-check text-success m-r-5"></i>view</a></td>
                                         </tr>
-<?										
+<?
    }
    $db->close();
-?>	
+?>
                 </tbody>
             </table>
         </div>

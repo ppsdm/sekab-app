@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Nirwan Adi Praesta">
     <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
-    <title>Kementerian Kesehatan Republik Indonesia</title>
+    <title>Sekretariat Kabinet Republik Indonesia</title>
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Menu CSS -->
@@ -97,14 +97,14 @@
 						<li><a href="dashboard.php?eselon=3" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 3</a></li>
 						<li><a href="dashboard.php?eselon=4" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 4</a></li>
 						</ul>
-						
+
                     </li>
                     <li>
                         <a href="blank.php" class="waves-effect"><i class="fa fa-info fa-fw" aria-hidden="true"></i>Pengantar</a>
-                    </li>					
+                    </li>
                     <li>
                         <a href="basic-table.php" class="waves-effect"><i class="fa fa-users fa-fw" aria-hidden="true"></i>Daftar Assessee</a>
-                    </li>					
+                    </li>
 
                     <li>
                         <a href="rekapitulasi.php" class="waves-effect"><i class="fa fa-book fa-fw" aria-hidden="true"></i>Rekapitulasi</a>
@@ -113,7 +113,7 @@
                 </ul>
 
             </div>
-            
+
         </div>
         <!-- ============================================================== -->
         <!-- End Left Sidebar -->
@@ -147,7 +147,7 @@
    $sql ='select level, count(*) jumlah from kemenkes_master_profile group by level order by level';
 
    $result  = $db->query($sql);
-   $row = array(); 
+   $row = array();
        $i = 0;
 
          while($res = $result->fetchArray(SQLITE3_ASSOC)){
@@ -156,12 +156,12 @@
 
               $row[$i]['level'] = $res['level'];
               $row[$i]['jumlah'] = $res['jumlah'];
-           
+
           }
 
          // print_r($row);
    $db->close();
-?>   
+?>
    <div class="row">
 
 			                    <div class="col-lg-4 col-sm-4 col-xs-4">
@@ -182,22 +182,22 @@
                         </div>
                     </div>
 </div>
-				
+
                 <div class="row">
- 
+
 
                     <div class="col-lg-8 col-sm-8 col-xs-8">
                         <div class="white-box">
                             <h5 class="box-title">Ninecell ESELON <?=$_GET['eselon'];?></h5>
 							<hr/>
-                        
+
                             <div id="chartdiv"></div>
-							
+
                         </div>
                     </div>
-               
 
-					
+
+
                     <div class="col-lg-4 col-sm-4 col-xs-4">
                         <div class="white-box analytics-info">
 						 <h5 class="box-title">POTENSI ESELON <?=$_GET['eselon'];?></h5>
@@ -205,8 +205,8 @@
 				<div id="chartpotensi"></div>
            </div>
                     </div>
-					
-					
+
+
 					                    <div class="col-lg-4 col-sm-4 col-xs-4">
                         <div class="white-box analytics-info">
 						 <h5 class="box-title">KOMPETENSI ESELON <?=$_GET['eselon'];?></h5>
@@ -214,9 +214,9 @@
 				<div id="chartkompetensi"></div>
            </div>
                     </div>
-					
-					
-                </div>				
+
+
+                </div>
 
 
             </div>
