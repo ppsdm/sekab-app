@@ -162,7 +162,7 @@
    {
       function __construct()
       {
-         $this->open('kemenkes.sqlite');
+         $this->open('setkab.sqlite');
       }
    }
    $db = new MyDB();
@@ -173,8 +173,8 @@
       echo "";
    }
 
-   $sql ='select a.profile_id,a.nip,a.first_name, a.level, a.current_position,a.unit, b.project_Activity_id  from kemenkes_master_profile a
-left join mappingKemenkes b on a.profile_id = b.profile_id';
+   $sql ='select a.id as profile_id, a.nip,a.nama_lengkap, a.jabatan, b.id as project_Activity_id from setkab_assessee a
+left join setkab_activity b on a.id = b.assessee_id';
 
    $ret = $db->query($sql);
    while($row = $ret->fetchArray(SQLITE3_ASSOC) ){
@@ -182,9 +182,9 @@ left join mappingKemenkes b on a.profile_id = b.profile_id';
 
 
                                         <tr>
-                                            <td><?=$row['nip'];?></td>
-                                            <td ><?=$row['first_name'];?></td>
-                                            <td ><?=str_replace('<br>','',$row['current_position']);?></td>
+                                            <td><?=str_replace(' ', '', $row['nip']);?></td>
+                                            <td ><?=$row['nama_lengkap'];?></td>
+                                            <td ><?=str_replace('<br>','',$row['jabatan']);?></td>
                                             <td>
 											<a class="btn btn btn-rounded btn-default btn-outline m-r-5" href="profile.php?profile_id=<?=$row['profile_id'];?>&project_activity_id=<?=$row['project_Activity_id'];?>">
 											<i class="ti-check text-success m-r-5"></i>view</a></td>
@@ -285,3 +285,4 @@ $(document).ready(function(){
 </body>
 
 </html>
+html>
