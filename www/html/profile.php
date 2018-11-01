@@ -108,7 +108,7 @@
    {
       function __construct()
       {
-         $this->open('kemenkes.sqlite');
+         $this->open('setkab.sqlite');
       }
    }
    $db = new MyDB();
@@ -118,31 +118,11 @@
       echo "";
    }
 
-   $sql ='select * from kemenkes_master_profile where profile_id = "'.$_GET['profile_id'].'"';
+   $sql ='select * from setkab_assessee where id = "'.$_GET['profile_id'].'"';
 //echo $sql;
    $result  = $db->query($sql);
-   $row = array();
-       $i = 0;
+   $row = $result->fetchArray(SQLITE3_ASSOC);
 
-         while($res = $result->fetchArray(SQLITE3_ASSOC)){
-
-             $i++;
-
-              $row[$i]['first_name'] = $res['first_name'];
-              $row[$i]['nip'] = $res['nip'];
-              $row[$i]['profile_id'] = $res['profile_id'];
-              $row[$i]['unit'] = $res['unit'];
-              $row[$i]['level'] = $res['level'];
-              $row[$i]['rumpun'] = $res['rumpun'];
-              $row[$i]['satuan_kerja'] = $res['satuan_kerja'];
-              $row[$i]['current_position'] = $res['current_position'];
-              $row[$i]['home_address'] = $res['home_address'];
-              $row[$i]['birthplace'] = $res['birthplace'];
-              $row[$i]['education'] = $res['education'];
-
-          }
-
-          //print_r($row);
    $db->close();
 ?>
 
@@ -150,15 +130,15 @@
                 <div class="row">
                     <div class="col-md-3 col-xs-15">
                         <div class="white-box">
-                            <div class="user-bg"> <img width="100%" alt="user" src="photos/<?=$row[1]['profile_id'];?>.jpg">
+                            <div class="user-bg"> <img width="100%" alt="user" src="photos/<?=$row['id'];?>.jpg">
                                 <div class="overlay-box">
                                     <div class="user-content">
-                                        <a href="javascript:void(0)"><img src="photos/<?=$row[1]['profile_id'];?>.jpg" class="thumb-lg img-circle" alt="img"></a>
-                                        <h4 class="text-white"><?=$row[1]['first_name'];?></h4> </div>
+                                        <a href="javascript:void(0)"><img src="photos/<?=$row['id'];?>.jpg" class="thumb-lg img-circle" alt="img"></a>
+                                        <h4 class="text-white"><?=$row['nama_lengkap'];?></h4> </div>
                                 </div>
                             </div>
                             <div class="user-btm-box">
-							<center><h4><?=$row[1]['nip'];?><h4></center>
+							<center><h4><?=$row['nip'];?><h4></center>
                             </div>
                         </div>
                     </div>
@@ -168,42 +148,32 @@
                                 <div class="form-group">
                                     <label class="col-md-12">Nama Lengkap</label>
                                     <div class="col-md-12">
-                                        <input type="text" disabled placeholder="<?=$row[1]['first_name'];?>" class="form-control form-control-line"> </div>
+                                        <input type="text" disabled placeholder="<?=$row['nama_lengkap'];?>" class="form-control form-control-line"> </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="example-email" class="col-md-12">NIP</label>
                                     <div class="col-md-12">
-                                        <input type="email"  disabled placeholder="<?=$row[1]['nip'];?>" class="form-control form-control-line" name="example-email" id="example-email"> </div>
+                                        <input type="email"  disabled placeholder="<?=$row['nip'];?>" class="form-control form-control-line" name="example-email" id="example-email"> </div>
                                 </div>
                                <div class="form-group">
                                     <label class="col-md-12">Jabatan</label>
                                     <div class="col-md-12">
-                                        <input type="text" disabled placeholder="<?=$row[1]['current_position'];?>" class="form-control form-control-line"> </div>
+                                        <input type="text" disabled placeholder="<?=$row['jabatan'];?>" class="form-control form-control-line"> </div>
                                 </div>
                                <div class="form-group">
-                                    <label class="col-md-12">Unit</label>
+                                    <label class="col-md-12">Pendidikan</label>
                                     <div class="col-md-12">
-                                        <input type="text" disabled placeholder="<?=$row[1]['unit'];?>" class="form-control form-control-line"> </div>
-                                </div>
-								                               <div class="form-group">
-                                    <label class="col-md-12">Rumpun</label>
-                                    <div class="col-md-12">
-                                        <input type="text" disabled placeholder="<?=$row[1]['rumpun'];?>" class="form-control form-control-line"> </div>
+                                        <input type="text" disabled placeholder="<?=$row['pendidikan_terakhir'];?>" class="form-control form-control-line"> </div>
                                 </div>
                                <div class="form-group">
                                     <label class="col-md-12">Alamat</label>
                                     <div class="col-md-12">
-                                        <input type="text" disabled placeholder="<?=$row[1]['home_address'];?>" class="form-control form-control-line"> </div>
-                                </div>
-								                               <div class="form-group">
-                                    <label class="col-md-12">Pendidikan</label>
-                                    <div class="col-md-12">
-                                        <input type="text" disabled placeholder="<?=$row[1]['education'];?>" class="form-control form-control-line"> </div>
+                                        <input type="text" disabled placeholder="<?=$row['alamat'];?>" class="form-control form-control-line"> </div>
                                 </div>
                                <div class="form-group">
-                                    <label class="col-md-12">Satuan Kerja</label>
+                                    <label class="col-md-12">Tempat, Tanggal Lahir</label>
                                     <div class="col-md-12">
-                                        <input type="text" disabled placeholder="<?=$row[1]['satuan_kerja'];?>" class="form-control form-control-line"> </div>
+                                        <input type="text" disabled placeholder="<?=$row['tempat_lahir'] . ", " . $row['tanggal_lahir'];?>" class="form-control form-control-line"> </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-12">
