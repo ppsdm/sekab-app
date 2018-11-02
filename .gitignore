@@ -36,3 +36,6 @@ webcache/*
 
 # Report PDFs directory
 /www/html/reports
+
+# App related files
+/www/html/files
