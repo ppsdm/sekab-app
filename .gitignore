@@ -1,14 +1,3 @@
-/www/html/photos
-/www/html/reports
-/webcache/Cookies/
-/webcache/
-debug.log
-debug.log.orig
-webcache/*
-webcache/GPUCache/data_0
-webcache/GPUCache/index
-
-### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
 ehthumbs.db
@@ -33,3 +22,17 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# SQLite database file
+*.sqlite
+
+# Log Files
+*.log
+
+# Web cache directory
+webcache/*
+
+# Photos directory
+/www/html/photos
+
+# Report PDFs directory
+/www/html/reports
