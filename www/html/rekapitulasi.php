@@ -155,11 +155,7 @@ th.rotate > div > span {
                 <div class="row">
                     <div class="col-md-12">
                         <div class="white-box">
-<div class="container">
-    <div class="row">
-
-
-            <table border="1px" style="text-align:center;font-size:10px;">
+            <table border="1px" style="text-align:center;font-size:10px;" class="table">
                 <thead>
                     <tr>
 					<th style="text-align:center" ><div><span>NO.</span></div></th>
@@ -215,9 +211,7 @@ th.rotate > div > span {
 ?>
                 </tbody>
             </table>
-
-    </div>
-</div>
+                        </div>
                     </div>
                 </div>
             </div>
