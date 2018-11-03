@@ -195,7 +195,7 @@
                 <!-- /.row -->
             </div>
             <!-- /.container-fluid -->
-            <footer class="footer text-center"> 2017 &copy; PPSDM </footer>
+            <footer class="footer text-center"> 2018 &copy; PPSDM </footer>
         </div>
         <!-- /#page-wrapper -->
     </div>

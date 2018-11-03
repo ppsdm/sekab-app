@@ -216,7 +216,7 @@ th.rotate > div > span {
                 </div>
             </div>
 <!-- /.container-fluid -->
-            <footer class="footer text-center"> 2017 &copy; PPSDM </footer>
+            <footer class="footer text-center"> 2018 &copy; PPSDM </footer>
         </div>
         <!-- ============================================================== -->
         <!-- End Page Content -->
