@@ -39,3 +39,6 @@ webcache/*
 
 # App related files
 /www/html/files
+
+# JS containing private information
+www/html/js/data*
