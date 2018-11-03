@@ -112,7 +112,7 @@
 <ol>
 <li>Berisi penjelasan dan keterangan tentang model dan jenis kompetensi yang dipakai termasuk di dalamnya  definisi / batasan kompetensi, perbedaan jumlah / jenis kompetensi dan level kompetensi pada setiap kelompok jabatan dan  golongan pegawai serta klasifikasi / rekomendasi hasil pengukuran / asesmen kompetensi dan Potensi. Disamping itu juga di sampaikan jadwal dan sekuen  kerja yang telah dilaksanakan .</li>
 <li>Berisi Tabel Rekapitulasi hasil asesmen kompetensi yang diurutkan atas  peringkat berdasarkan (”sort by”) Penguasaan kompetensi (job Fit), dan  posisi dalam “9 cell” (penilaian gabungan antara “job fit” dan kapasitas potensi diri)  . </li>
-<li>Laporan individual untuk setiap peserta. Laporan Individual ini diurutkan  berdasarkan Nomor Induk Pegawai (NIP) pada kelompok jabatan atau golongan kepegawaiannya. Disajikan dalam bentuk “soft copy”  oada satu keping CD.</li>
+<li>Laporan individual untuk setiap peserta. Laporan Individual ini diurutkan  berdasarkan Nomor Induk Pegawai (NIP) pada kelompok jabatan atau golongan kepegawaiannya. Disajikan dalam bentuk “soft copy”  pada satu keping CD.</li>
 </ol>
 <br/>
 <h3>Membaca dan memahami Laporan  Profile Assessment  ini,  ada beberapa hal yang perlu diperhatikan yaitu :</h3>
@@ -123,10 +123,10 @@
 </ol>
 <br/>
 <br/>
-Laporan ini pada dasarnya bersifat RAHASIA / CONFIDENTIAL, karena itu diharapkan penggunaan dan penyimpanannya  disesuaikan dengan sifatnya tersebut. Hal hal yang melanggar ketentuan kerahasiaan Laporan / tulisan ini dapat  sangat merugikan individu atau subjek yang berkaitan yang pada ahirnya juga akan mempengaruhi organisasi / unit kerjanya. Semoga dapat dipahami dan memberikan kontribusi optimal dalam proses pembinaan dan pengembangan pejabat di lingkungan KEMENKES
+Laporan ini pada dasarnya bersifat RAHASIA / CONFIDENTIAL, karena itu diharapkan penggunaan dan penyimpanannya  disesuaikan dengan sifatnya tersebut. Hal hal yang melanggar ketentuan kerahasiaan Laporan / tulisan ini dapat  sangat merugikan individu atau subjek yang berkaitan yang pada ahirnya juga akan mempengaruhi organisasi / unit kerjanya. Semoga dapat dipahami dan memberikan kontribusi optimal dalam proses pembinaan dan pengembangan pejabat di lingkungan Setkab.
 <br/><br/><br/>
 
-Jakarta,  5  Desember  2017
+Jakarta,  November  2018
 
 							</div>
                     </div>
