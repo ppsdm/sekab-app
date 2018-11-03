@@ -15,7 +15,7 @@
      //ct-chart
 
 var chart = new Chartist.Pie('#ct-chart', {
-  series: [30, 123, 424],
+  series: [19, 79, 255],
   labels: ['ESELON 2', 'ESELON 3', 'ESELON 4']
 }, {
   donut: true,

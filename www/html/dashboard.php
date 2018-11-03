@@ -129,39 +129,6 @@
 
                     <!-- /.col-lg-12 -->
                 </div>
-<?
-   class MyDB extends SQLite3
-   {
-      function __construct()
-      {
-         $this->open('kemenkes.sqlite');
-      }
-   }
-   $db = new MyDB();
-   if(!$db){
-      echo "<span class='text-danger'>".$db->lastErrorMsg()."</span>";
-   } else {
-      echo "";
-   }
-
-   $sql ='select level, count(*) jumlah from kemenkes_master_profile group by level order by level';
-
-   $result  = $db->query($sql);
-   $row = array();
-       $i = 0;
-
-         while($res = $result->fetchArray(SQLITE3_ASSOC)){
-
-             $i++;
-
-              $row[$i]['level'] = $res['level'];
-              $row[$i]['jumlah'] = $res['jumlah'];
-
-          }
-
-         // print_r($row);
-   $db->close();
-?>
    <div class="row">
 
 			                    <div class="col-lg-4 col-sm-4 col-xs-4">
@@ -173,9 +140,9 @@
                                 </li>
                                 <li class="text-right"><i class="ti-arrow-up text-success"></i> <span class="counter text-success">
 								<?
-								if ($_GET['eselon'] ==2) {echo '29';}
-								else if ($_GET['eselon'] ==3) {echo '119';}
-								else {echo '413';}
+								if ($_GET['eselon'] ==2) {echo '19';}
+								else if ($_GET['eselon'] ==3) {echo '79';}
+								else {echo '255';}
 								?>
 								</span></li>
                             </ul>
