@@ -174,8 +174,8 @@
       echo "";
    }
 
-   $sql ='select a.id as profile_id, a.nip,a.nama_lengkap, a.jabatan, b.id as project_Activity_id from setkab_assessee a
-left join setkab_activity b on a.id = b.assessee_id where a.level = "IVa"';
+   $sql ='select distinct a.id as profile_id, a.nip,a.nama_lengkap, a.jabatan, b.id as project_Activity_id from setkab_assessee a
+left join setkab_activity b on a.id = b.assessee_id where lower(a.level) = "iva" or lower(a.level) = "pelaksana" or lower(a.level) = "jft4"';
 
    $ret = $db->query($sql);
    while($row = $ret->fetchArray(SQLITE3_ASSOC) ){
