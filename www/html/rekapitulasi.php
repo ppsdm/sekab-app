@@ -180,7 +180,7 @@ th.rotate > div > span {
    {
       function __construct()
       {
-         $this->open('kemenkes.sqlite');
+         $this->open('setkab.sqlite');
       }
    }
    $db = new MyDB();
