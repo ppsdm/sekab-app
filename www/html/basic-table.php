@@ -175,7 +175,7 @@
       echo "";
    }
 
-   $sql ='select distinct a.id as profile_id, a.nip,a.nama_lengkap, a.jabatan, b.id as project_Activity_id from setkab_assessee a
+   $sql ='select distinct a.id as profile_id, a.nip,a.nama_lengkap, a.jabatan, b.no_test as no_test from setkab_assessee a
 left join setkab_activity b on a.id = b.assessee_id';
 
    $ret = $db->query($sql);
@@ -188,7 +188,7 @@ left join setkab_activity b on a.id = b.assessee_id';
                                             <td ><?=$row['nama_lengkap'];?></td>
                                             <td ><?=str_replace('<br>','',$row['jabatan']);?></td>
                                             <td>
-											<a class="btn btn btn-rounded btn-default btn-outline m-r-5" href="profile.php?profile_id=<?=$row['profile_id'];?>&project_activity_id=<?=$row['project_Activity_id'];?>">
+											<a class="btn btn btn-rounded btn-default btn-outline m-r-5" href="profile.php?profile_id=<?=$row['profile_id'];?>&no_test=<?=$row['no_test'];?>">
 											<i class="ti-check text-success m-r-5"></i>view</a></td>
                                         </tr>
 <?

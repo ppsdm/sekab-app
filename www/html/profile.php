@@ -179,12 +179,12 @@
                                 <div class="form-group">
                                     <div class="col-sm-12">
 <!--online
-  <a  target="_blank" class="btn btn-success" href="javascript:window.open('http://projects.ppsdm.com/index.php/projects/activity/pdf?id=<?=$_GET['project_activity_id'];?>', '', 'width=800,height=600')">
+  <a  target="_blank" class="btn btn-success" href="javascript:window.open('http://projects.ppsdm.com/index.php/projects/activity/pdf?id=<?=$_GET['no_test'];?>', '', 'width=800,height=600')">
     View Report
   </a>
  !-->
 
-   <a  target="_blank" class="btn btn-success" href="reports/<?=$_GET['project_activity_id'];?>.pdf">
+   <a  target="_blank" class="btn btn-success" href="reports/<?=$_GET['no_test'];?>.pdf">
     View Report
   </a>
                                     </div>
