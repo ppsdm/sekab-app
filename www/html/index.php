@@ -34,6 +34,7 @@
 <![endif]-->
 <script src="js/amcharts.js"></script>
 <script src="js/xy.js"></script>
+<script src="js/pie.js"></script>
 <script src="js/responsive.min.js"></script>
 <script src="https://amcharts.com/lib/3/plugins/export/export.js"></script>
 <script src="js/data.js"></script>
@@ -173,8 +174,16 @@
                             <h5 class="box-title">Komposisi peserta<br/>berdasarkan level jabatan</h5>
 							<hr/>
 
-                            <div id="ct-chart" style="height: 405px;"></div>
+                            <div id="ct-chart" style="width: 100%; height: 300px;"></div>
 
+                        </div>
+
+                        <div class="white-box">
+                            <h5 class="box-title">
+                                Komposisi peserta dalam setiap Cell
+                            </h5>
+                            <hr/>
+                            <div id="chartcell" style="width: 100%; height: 300px;"></div>
                         </div>
                     </div>
 

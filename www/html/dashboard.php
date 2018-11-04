@@ -50,12 +50,17 @@
 }
 #chartpotensi {
   width: 100%;
-  height: 300px;
+  height: 281px;
 }
 
 #chartkompetensi {
   width: 100%;
-  height: 300px;
+  height: 281px;
+}
+
+#chartcell {
+  width: 100%;
+  height: 281px;
 }
 </style>
 </head>
@@ -214,6 +219,17 @@
 							<hr/>
 				<div id="chartkompetensi"></div>
            </div>
+                    </div>
+
+
+                    <div class="col-lg-8 col-sm-8 col-xs-8">
+                        <div class="white-box analytics-info">
+                            <h5 class="box-title">
+                                Komposisi peserta dalam setiap Cell
+                            </h5>
+                            <hr/>
+                            <div id="chartcell"></div>
+                        </div>
                     </div>
 
 
