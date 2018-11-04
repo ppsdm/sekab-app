@@ -109,22 +109,23 @@
                         <div class="white-box">
                             <h3 class="box-title"></h3>
 
-<h3>Laporan Ahir kegiatan hasil Profile Assessment Competency ini terdiri dari 3 bagian, sebagai berikut :</h3>
+<h3>Laporan Akhir kegiatan hasil Uji Kompetensi ini terdiri dari 3 bagian, sebagai berikut :</h3>
 <ol>
-<li>Berisi penjelasan dan keterangan tentang model dan jenis kompetensi yang dipakai termasuk di dalamnya  definisi / batasan kompetensi, perbedaan jumlah / jenis kompetensi dan level kompetensi pada setiap kelompok jabatan dan  golongan pegawai serta klasifikasi / rekomendasi hasil pengukuran / asesmen kompetensi dan Potensi. Disamping itu juga di sampaikan jadwal dan sekuen  kerja yang telah dilaksanakan .</li>
-<li>Berisi Tabel Rekapitulasi hasil asesmen kompetensi yang diurutkan atas  peringkat berdasarkan (”sort by”) Penguasaan kompetensi (job Fit), dan  posisi dalam “9 cell” (penilaian gabungan antara “job fit” dan kapasitas potensi diri)  . </li>
-<li>Laporan individual untuk setiap peserta. Laporan Individual ini diurutkan  berdasarkan Nomor Induk Pegawai (NIP) pada kelompok jabatan atau golongan kepegawaiannya. Disajikan dalam bentuk “soft copy”  pada satu keping CD.</li>
+<li>Berisi penjelasan dan keterangan tentang model dan jenis kompetensi yang dipakai termasuk di dalamnya definisi / batasan kompetensi, perbedaan jumlah / jenis kompetensi dan level kompetensi pada setiap kelompok jabatan dan golongan pegawai serta klasifikasi / rekomendasi hasil pengukuran / asesmen kompetensi dan Potensi. Disamping itu juga di sampaikan jadwal dan sekuen kerja yang telah dilaksanakan .</li>
+<li>Berisi Tabel Rekapitulasi hasil asesmen kompetensi yang diurutkan atas peringkat berdasarkan (”sort by”) Penguasaan kompetensi (job Fit), dan posisi dalam “9 cell” (penilaian gabungan antara “job fit” dan kapasitas potensi diri) . </li>
+<li>3.  Laporan individual untuk setiap peserta. Laporan Individual ini diurutkan berdasarkan Level Jabatan Pegawai (Jabatan Pimpinan Tinggi Pratama/Eselon2, Jabatan Administrator/Eselon3, Jabatan Pengawas/Eselon4, dan Jabatan Pelaksana/Non Eselon), disajikan dalam bentuk Hard Copy dan soft copy.</li>
+</ol>
+<h3>Membaca dan memahami Laporan Uji Kompetensi ini, ada beberapa hal yang perlu diperhatikan yaitu :</h3>
+<ol>
+<li>Proses objektifikasi penilaian aspek aspek kompetensi/potensi Psikologik melalui cara kuantifikasi (“penilaian dengan skala rasional”) semua aspek yang ada, pada dasarnya bertujuan hanya untuk memudahkan Manajemen pengelola SDM di lingkungan Sekretariat Kabinet RI dalam melihat gambaran umum kapasitas kompetensi dan membandingkan kondisi aspek aspek kompetensi para pegawai. Sehingga, pada dasarnya tidak menyederhanakan permasalahan adanya dinamika perilaku para pegawai dalam kenyataan kerja/ kinerja sehari harinya.</li>
+<li>Dengan kata lain, tidak tertutup adanya kemungkinan di mana pegawai yang dalam hasil uji kompetensi saat ini hasilnya terlihat kurang memuaskan, namun kenyataan kinerja sehari dirasakan cukup baik/berprestasi cukup baik, atau sebaliknya. Hal ini dapat terjadi, biasanya berkaitan dengan aspek aspek detil penilaian yang dilakukan dalam uji kompetensi ini dengan penilaian kinerja sehari hari.</li>
+<li>Potret uji kompetensi yang telah dilakukan ini telah mempertimbangkan dan menilai juga aspek potensi Psikologik dengan penekanan pada Attitude dan kemampuan belajar. Hal ini sejalan dengan dasar teori dan konsep Komptensi yang dipakai dimana, kompetensi tersebut terdiri dari tiga dimensi dasar yaitu : Knowledge , Skill dan Attitide (S – K – A).</li>
 </ol>
 <br/>
-<h3>Membaca dan memahami Laporan  Profile Assessment  ini,  ada beberapa hal yang perlu diperhatikan yaitu :</h3>
-<ol>
-<li>Proses objektifikasi penilaian aspek aspek kompetensi /  potensi Psikologik l   melalui cara kuantifikasi (“penilaian dengan skala rasional”) semua aspek  yang ada, pada dasarnya bertujuan hanya untuk memudahkan sekali lagi hanya untuk memudahkan Manajemen pengelola SDM dilingkungan Kementrian Kesehatan RI  dalam melihat gambaran umum kapasitas kompetensi dan membandingkan kondisi aspek aspek kompetensi para pegawai . Sehingga, pada dasarnya  tidak menyederhanakan permasalahan adanya dinamika  perilaku para pegawai dalam kenyataan kerja / kinerja  sehari harinya. </li>
-<li>Dengan kata lain, tidak tertutup adanya kemungkinan  di mana pegawai yang dalam hasil asesmen kompetensi saat ini hasilnya terlihat kurang memuaskan, namun kenyataan kinerja sehari dirasakan cukup baik / berprestasi cukup baik, atau sebaliknya.   Hal ini dapat terjadi, biasanya berkaitan dengan aspek aspek detil penilaian yang dilakukan dalam asesment kompetensi ini dengan penilaian kinerjaq sehari hari.</li>
-<li>Potret profile kompetensi yang telah dilakukan ini telah mempertimbangkan dan menilai juga aspek potensi Psikologik dengan penekanan pada Attitude dan kemampuan belajar. Hal ini sejalan dengan dasar teori dan konsep Komptensi yang dipakai dimana, kompetensi tersebut terdiri dari tiga dimensi dasar yaitu : Knowledge , Skill dan Attitide (S – K – A).</li>
-</ol>
+Laporan ini pada dasarnya bersifat RAHASIA / CONFIDENTIAL, karena itu diharapkan penggunaan dan penyimpanannya disesuaikan dengan sifatnya tersebut.
 <br/>
 <br/>
-Laporan ini pada dasarnya bersifat RAHASIA / CONFIDENTIAL, karena itu diharapkan penggunaan dan penyimpanannya  disesuaikan dengan sifatnya tersebut. Hal hal yang melanggar ketentuan kerahasiaan Laporan / tulisan ini dapat  sangat merugikan individu atau subjek yang berkaitan yang pada ahirnya juga akan mempengaruhi organisasi / unit kerjanya. Semoga dapat dipahami dan memberikan kontribusi optimal dalam proses pembinaan dan pengembangan pejabat di lingkungan Setkab.
+Hal - hal yang melanggar ketentuan kerahasiaan Laporan ini dapat sangat merugikan individu atau subjek yang berkaitan yang pada akhirnya juga akan mempengaruhi organisasi/unit kerjanya. Semoga dapat dipahami dan memberikan kontribusi optimal dalam proses pembinaan dan pengembangan pejabat di lingkungan Sekretariat Kabinet RI.
 <br/><br/><br/>
 
 Jakarta,  November  2018
