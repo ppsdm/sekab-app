@@ -38,7 +38,7 @@
 <script src="js/responsive.min.js"></script>
 <script src="js/export.js"></script>
 <script src="js/light.js"></script>
-<script src="js/data-eselon<?=$_GET['eselon'];?>.js"></script>
+<script src="js/data-<?=$_GET['jabatan'];?>.js"></script>
 <style>
 #chartdiv {
   width: 100%;
@@ -93,9 +93,10 @@
                         <a href="index.php" class="waves-effect"><i class="fa fa-desktop fa-fw" aria-hidden="true"></i>Dashboard</a>
 						<ul style="list-style: none;" id="side-menu">
 						<li><a href="index.php" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Keseluruhan</a></li>
-						<li><a href="dashboard.php?eselon=2" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 2</a></li>
-						<li><a href="dashboard.php?eselon=3" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 3</a></li>
-						<li><a href="dashboard.php?eselon=4" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 4</a></li>
+						<li><a href="dashboard.php?jabatan=eselon2" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 2</a></li>
+						<li><a href="dashboard.php?jabatan=eselon3" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 3</a></li>
+						<li><a href="dashboard.php?jabatan=eselon4" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 4</a></li>
+						<li><a href="dashboard.php?jabatan=pelaksana" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Pelaksana</a></li>
 						</ul>
 
                     </li>
@@ -133,16 +134,25 @@
 
 			                    <div class="col-lg-4 col-sm-4 col-xs-4">
                         <div class="white-box analytics-info">
-                            <h3 class="box-title">JUMLAH ESELON <?=$_GET['eselon'];?></h3>
+                            <h3 class="box-title">
+                                JUMLAH
+                                <?
+                                if ($_GET['jabatan'] == "eselon2") {echo 'ESELON 2';}
+                                else if ($_GET['jabatan'] == "eselon3") {echo 'ESELON 3';}
+                                else if ($_GET['jabatan'] == "eselon4") {echo 'ESELON 4';}
+                                else {echo 'PELAKSANA';}
+                                ?>
+                            </h3>
                             <ul class="list-inline two-part">
                                 <li>
                                     <div id="sparklinedash"></div>
                                 </li>
                                 <li class="text-right"><i class="ti-arrow-up text-success"></i> <span class="counter text-success">
 								<?
-								if ($_GET['eselon'] ==2) {echo '19';}
-								else if ($_GET['eselon'] ==3) {echo '79';}
-								else {echo '255';}
+								if ($_GET['jabatan'] == "eselon2") {echo '19';}
+                                else if ($_GET['jabatan'] == "eselon3") {echo '79';}
+								else if ($_GET['jabatan'] == "eselon4") {echo '164';}
+								else {echo '89';}
 								?>
 								</span></li>
                             </ul>
@@ -155,7 +165,15 @@
 
                     <div class="col-lg-8 col-sm-8 col-xs-8">
                         <div class="white-box">
-                            <h5 class="box-title">Ninecell ESELON <?=$_GET['eselon'];?></h5>
+                            <h5 class="box-title">
+                                Ninecell
+                                <?
+                                if ($_GET['jabatan'] == "eselon2") {echo 'ESELON 2';}
+                                else if ($_GET['jabatan'] == "eselon3") {echo 'ESELON 3';}
+                                else if ($_GET['jabatan'] == "eselon4") {echo 'ESELON 4';}
+                                else {echo 'PELAKSANA';}
+                                ?>
+                            </h5>
 							<hr/>
 
                             <div id="chartdiv"></div>
@@ -167,7 +185,15 @@
 
                     <div class="col-lg-4 col-sm-4 col-xs-4">
                         <div class="white-box analytics-info">
-						 <h5 class="box-title">POTENSI ESELON <?=$_GET['eselon'];?></h5>
+                            <h5 class="box-title">
+                                POTENSI
+                                <?
+                                if ($_GET['jabatan'] == "eselon2") {echo 'ESELON 2';}
+                                else if ($_GET['jabatan'] == "eselon3") {echo 'ESELON 3';}
+                                else if ($_GET['jabatan'] == "eselon4") {echo 'ESELON 4';}
+                                else {echo 'PELAKSANA';}
+                                ?>
+                            </h5>
 							<hr/>
 				<div id="chartpotensi"></div>
            </div>
@@ -176,7 +202,15 @@
 
 					                    <div class="col-lg-4 col-sm-4 col-xs-4">
                         <div class="white-box analytics-info">
-						 <h5 class="box-title">KOMPETENSI ESELON <?=$_GET['eselon'];?></h5>
+                            <h5 class="box-title">
+                                KOMPETENSI
+                                <?
+                                if ($_GET['jabatan'] == "eselon2") {echo 'ESELON 2';}
+                                else if ($_GET['jabatan'] == "eselon3") {echo 'ESELON 3';}
+                                else if ($_GET['jabatan'] == "eselon4") {echo 'ESELON 4';}
+                                else {echo 'PELAKSANA';}
+                                ?>
+                            </h5>
 							<hr/>
 				<div id="chartkompetensi"></div>
            </div>

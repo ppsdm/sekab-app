@@ -56,27 +56,6 @@
 .filterable .filters input[disabled]:-ms-input-placeholder {
     color: #333;
 }
-th.rotate {
-  /* Something you can count on */
-  height: 170px;
-  white-space: nowrap;
-  text-decoration: none;
-}
-
-th.rotate > div {
-  transform:
-    /* Magic Numbers */
-    translate(0px, 80px)
-    /* 45 is really 360 - 45 */
-    rotate(270deg);
-  width: 20px;
-  text-decoration: none;
-}
-th.rotate > div > span {
-  border-bottom: 1px solid #ccc;
-  padding: 5px 10px;
-  text-decoration: none;
-}
 </style>
 </head>
 
@@ -101,13 +80,13 @@ th.rotate > div > span {
         <!-- ============================================================== -->
         <!-- Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
-		<br/>
+        <br/>
         <div class="navbar-default sidebar" role="navigation">
             <div class="sidebar-nav slimscrollsidebar">
                 <div class="sidebar-head">
                     <h3><span class="fa-fw open-close"><i class="ti-close ti-menu"></i></span> <span class="hide-menu">Navigation</span></h3>
                 </div>
-				<br/>
+                <br/>
                 <ul class="nav" id="side-menu">
                     <li style="padding: 70px 0 0;">
                         <a href="index.php" class="waves-effect"><i class="fa fa-desktop fa-fw" aria-hidden="true"></i>Dashboard</a>
@@ -145,31 +124,40 @@ th.rotate > div > span {
         <div id="page-wrapper">
             <div class="container-fluid">
                 <div class="row bg-title">
-                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Tabel Rekapitulasi</h4> </div>
-                      <div >
-                <div class="pull-right">
-                    <a class="btn btn-success" href="./files/rekapitulasi_app.xlsx">Download</a>
-                </div>
-            </div>
+                    <div class="col-lg-10 col-md-5 col-sm-4 col-xs-12">
+                        <h4 class="page-title">
+                        <a class="btn btn btn-rounded btn-default btn-outline m-r-5" href="basic-table.php"><i class="fa fa-circle m-r-5 text-inverse"></i>SELURUH PEGAWAI</a>
+                        <a class="btn btn btn-rounded btn-default btn-outline m-r-5" href="eselon2.php"><i class="fa fa-circle m-r-5 text-inverse"></i>ESELON 2</a>
+                        <a class="btn btn btn-rounded btn-default btn-outline m-r-5" href="eselon3.php"><i class="fa fa-circle m-r-5 text-inverse"></i>ESELON 3</a>
+                        <a class="btn btn btn-rounded btn-default btn-outline m-r-5" href="eselon4.php"><i class="fa fa-circle m-r-5 text-inverse"></i>ESELON 4</a>
+                        <a class="btn btn btn-rounded btn-default btn-outline m-r-5" href="pelaksana.php"><i class="fa fa-circle m-r-5 text-info"></i>PELAKSANA</a>
+                        </h4>
+
+                        </div>
+
+                        </div>
+
+                    <!-- /.col-lg-12 -->
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="white-box">
-            <table border="1px" style="text-align:center;font-size:10px;" class="table">
-                <thead>
-                    <tr>
-					<th style="text-align:center" ><div><span>NO.</span></div></th>
-                        <th style="text-align:center" >NAMA PEGAWAI</th>
-						<th style="text-align:center" ><div><span>NIP</span></div></th>
-						<th style="text-align:center" ><div><span>JABATAN</span></div></th>
-						<th style="text-align:center" ><div><span>% POTENSI</span></div></th>
-						<th style="text-align:center" ><div><span>REK POTENSI</span></div></th>
-						<th style="text-align:center" ><div><span>% KOMPETENSI</span></div></th>
-						<th style="text-align:center" ><div><span>REK KOMPETENSI</span></div></th>
-						<th style="text-align:center" ><div><span>9-CELL</span></div></th>
+                        <h3 class="box-title">PELAKSANA</h3>
+                        <hr/>
 
-					</tr>
+        <div class="panel panel-primary filterable">
+            <div >
+                <div class="pull-right">
+                    <button class="btn btn-default btn-xs btn-filter"><span class="glyphicon glyphicon-filter"></span> Filter</button>
+                </div>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr class="filters">
+                        <th><input type="text" class="form-control" placeholder="NIP" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="NAMA" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="POSISI" disabled></th>
+                    </tr>
                 </thead>
                 <tbody>
 <?
@@ -183,28 +171,26 @@ th.rotate > div > span {
    $db = new MyDB();
    if(!$db){
       echo "<span class='text-danger'>".$db->lastErrorMsg()."</span>";
-	  $db->close();
+      $db->close();
    } else {
       echo "";
    }
 
-   $sql ='select *  from rekapitulasi_app';
+   $sql ='select distinct a.id as profile_id, a.nip,a.nama_lengkap, a.jabatan, b.id as project_Activity_id from setkab_assessee a
+left join setkab_activity b on a.id = b.assessee_id where lower(a.level) = "pelaksana"';
 
    $ret = $db->query($sql);
    while($row = $ret->fetchArray(SQLITE3_ASSOC) ){
 ?>
 
 
-                                        <tr style="text-align:center;font-size:10px;">
-                                            <td ><?=$row['NOMOR'];?></td>
-                                            <td style="text-align:left;font-size:10px;padding-left:5px;"><b><?=$row['NAMALENGKAP'];?></b></td>
-                                            <td ><?=$row['NIP'];?></td>
-                                            <td ><?=$row['JABATAN'];?></td>
-                                            <td ><?=$row['PROSENTASEPOTENSI'];?></td>
-                                            <td ><?=$row['REK-POTENSI'];?></td>
-                                            <td ><?=$row['PROSENTASEKOMPETENSI'];?></td>
-                                            <td ><?=$row['REK-KOMPETENSI'];?></td>
-                                            <td ><?=$row['POSISI9CELL'];?></td>
+                                        <tr>
+                                            <td><?=str_replace(' ', '', $row['nip']);?></td>
+                                            <td ><?=$row['nama_lengkap'];?></td>
+                                            <td ><?=str_replace('<br>','',$row['jabatan']);?></td>
+                                            <td>
+                                            <a class="btn btn btn-rounded btn-default btn-outline m-r-5" href="profile.php?profile_id=<?=$row['profile_id'];?>&project_activity_id=<?=$row['project_Activity_id'];?>">
+                                            <i class="ti-check text-success m-r-5"></i>view</a></td>
                                         </tr>
 <?
    }
@@ -212,7 +198,8 @@ th.rotate > div > span {
 ?>
                 </tbody>
             </table>
-                        </div>
+        </div>
+
                     </div>
                 </div>
             </div>
@@ -250,8 +237,8 @@ th.rotate > div > span {
     <script src="js/custom.min.js"></script>
     <script src="js/dashboard1.js"></script>
     <script src="../plugins/bower_components/toast-master/js/jquery.toast.js"></script>
-	<script>
-	/*
+    <script>
+    /*
 Please consider that the JS part isn't production ready at all, I just code it to show the concept of merging filters and titles together !
 */
 $(document).ready(function(){
@@ -296,7 +283,7 @@ $(document).ready(function(){
         }
     });
 });
-	</script>
+    </script>
 </body>
 
 </html>

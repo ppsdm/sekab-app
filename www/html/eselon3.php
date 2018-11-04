@@ -92,9 +92,10 @@
                         <a href="index.php" class="waves-effect"><i class="fa fa-desktop fa-fw" aria-hidden="true"></i>Dashboard</a>
 						<ul style="list-style: none;" id="side-menu">
 						<li><a href="index.php" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Keseluruhan</a></li>
-						<li><a href="dashboard.php?eselon=2" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 2</a></li>
-						<li><a href="dashboard.php?eselon=3" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 3</a></li>
-						<li><a href="dashboard.php?eselon=4" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 4</a></li>
+						<li><a href="dashboard.php?jabatan=eselon2" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 2</a></li>
+						<li><a href="dashboard.php?jabatan=eselon3" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 3</a></li>
+						<li><a href="dashboard.php?jabatan=eselon4" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 4</a></li>
+						<li><a href="dashboard.php?jabatan=pelaksana" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Pelaksana</a></li>
 						</ul>
 
                     </li>
@@ -129,6 +130,7 @@
 						<a class="btn btn btn-rounded btn-default btn-outline m-r-5" href="eselon2.php"><i class="fa fa-circle m-r-5 text-inverse"></i>ESELON 2</a>
 						<a class="btn btn btn-rounded btn-default btn-outline m-r-5" href="eselon3.php"><i class="fa fa-circle m-r-5 text-info"></i>ESELON 3</a>
 						<a class="btn btn btn-rounded btn-default btn-outline m-r-5" href="eselon4.php"><i class="fa fa-circle m-r-5 text-inverse"></i>ESELON 4</a>
+                        <a class="btn btn btn-rounded btn-default btn-outline m-r-5" href="pelaksana.php"><i class="fa fa-circle m-r-5 text-inverse"></i>PELAKSANA</a>
 						</h4>
 
 						</div>
@@ -173,7 +175,7 @@
    }
 
    $sql ='select distinct a.id as profile_id, a.nip,a.nama_lengkap, a.jabatan, b.id as project_Activity_id from setkab_assessee a
-left join setkab_activity b on a.id = b.assessee_id where lower(a.level) = "iiia" or lower(a.level) = "jft3';
+left join setkab_activity b on a.id = b.assessee_id where lower(a.level) = "iiia" or lower(a.level) = "jft3"';
 
    $ret = $db->query($sql);
    while($row = $ret->fetchArray(SQLITE3_ASSOC) ){

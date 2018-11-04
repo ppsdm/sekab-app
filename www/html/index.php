@@ -82,9 +82,10 @@
                         <a href="index.php" class="waves-effect"><i class="fa fa-desktop fa-fw" aria-hidden="true"></i>Dashboard</a>
 						<ul style="list-style: none;" id="side-menu">
 						<li><a href="index.php" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Keseluruhan</a></li>
-						<li><a href="dashboard.php?eselon=2" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 2</a></li>
-						<li><a href="dashboard.php?eselon=3" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 3</a></li>
-						<li><a href="dashboard.php?eselon=4" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 4</a></li>
+						<li><a href="dashboard.php?jabatan=eselon2" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 2</a></li>
+						<li><a href="dashboard.php?jabatan=eselon3" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 3</a></li>
+						<li><a href="dashboard.php?jabatan=eselon4" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Eselon 4</a></li>
+						<li><a href="dashboard.php?jabatan=pelaksana" class="waves-effect"><i class="fa fa-dot-circle-o fa-fw" aria-hidden="true"></i>Pelaksana</a></li>
 						</ul>
 
                     </li>
@@ -120,7 +121,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-4 col-sm-4 col-xs-4">
+                    <div class="col-lg-3 col-sm-3 col-xs-3">
                         <div class="white-box analytics-info">
                             <h3 class="box-title">ESELON 2</h3>
                             <ul class="list-inline two-part">
@@ -131,7 +132,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-4 col-xs-4">
+                    <div class="col-lg-3 col-sm-3 col-xs-3">
                         <div class="white-box analytics-info">
                             <h3 class="box-title">ESELON 3</h3>
                             <ul class="list-inline two-part">
@@ -142,14 +143,25 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-4 col-xs-4">
+                    <div class="col-lg-3 col-sm-3 col-xs-3">
                         <div class="white-box analytics-info">
                             <h3 class="box-title">Eselon 4</h3>
                             <ul class="list-inline two-part">
                                 <li>
                                     <div id="sparklinedash3"></div>
                                 </li>
-                                <li class="text-right"><i class="ti-arrow-up text-info"></i> <span class="counter text-info">255</span></li>
+                                <li class="text-right"><i class="ti-arrow-up text-info"></i> <span class="counter text-info">164</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-3 col-xs-3">
+                        <div class="white-box analytics-info">
+                            <h3 class="box-title">Pelaksana</h3>
+                            <ul class="list-inline two-part">
+                                <li>
+                                    <div id="sparklinedash4"></div>
+                                </li>
+                                <li class="text-right"><i class="ti-arrow-up text-info"></i> <span class="counter text-info">89</span></li>
                             </ul>
                         </div>
                     </div>
